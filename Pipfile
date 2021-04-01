@@ -1,0 +1,17 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+minio = "==4.0.0"
+numpy = "==1.12.1"
+pandas = "==0.19.2"
+scikit-learn = "==0.19.1"
+scipy = "==0.19.1"
+pyngrok = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.6"
