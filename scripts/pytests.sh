@@ -1,3 +1,5 @@
 #!/bin/bash
 
-cd .. && python manage.py test --settings=config.settings.development.py
+#cd .. && python manage.py test
+
+cd .. && pytest -s posts/tests/test_models.py

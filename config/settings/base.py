@@ -39,11 +39,11 @@ BASE_APPS = [
     'django.contrib.staticfiles',
 ]
 
-OPTIONAL_APPS = [
+PROJECT_APPS = [
     'posts',
 ]
 
-INSTALLED_APPS = BASE_APPS + OPTIONAL_APPS
+INSTALLED_APPS = BASE_APPS + PROJECT_APPS
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
