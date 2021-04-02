@@ -37,6 +37,7 @@ BASE_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework',
 ]
 
 PROJECT_APPS = [
@@ -44,6 +45,12 @@ PROJECT_APPS = [
 ]
 
 INSTALLED_APPS = BASE_APPS + PROJECT_APPS
+
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework.authentication.BasicAuthentication',  # enables simple command line authentication
+    )
+}
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
